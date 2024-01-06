@@ -8,12 +8,19 @@
 
 :root {
   --main-bg-color: #d9e6f7;
+  --main-bg-color2: #fff;
   --main-bg-buttons-menu-color: #dde9f8;
   --main-text1-color: #4e93aa;
   --main-text2-color: #979797;
   --main-text3-color: #000000;
   --main-buttons-menu-color: #535c69;
-  --main-header-color: rgb(81 127 197);
+  --main-header-color: linear-gradient(
+    180deg,
+    #517fc5 13.02%,
+    rgba(81, 127, 197, 0.75) 30.73%,
+    rgba(81, 127, 197, 0.75) 82.81%,
+    #517fc5 96.35%
+  );
   --main-line-one-about-color: #deeefd;
   --main-line-two-about-color: #eef8fe;
   --main-card-color: #f0f0f0;
@@ -28,7 +35,7 @@ body {
 }
 
 header {
-  background-color: var(--main-header-color);
+  background: var(--main-header-color);
 }
 
 p {
@@ -59,7 +66,7 @@ p {
 
 .header-left-img {
   display: flex;
-  background-color: #fff;
+  background-color: var(--main-bg-color2);
   height: 2.2rem;
   width: 5.5rem;
   align-items: center;
@@ -110,15 +117,21 @@ p {
   cursor: pointer;
 }
 
+.orkut-container {
+  display: flex;
+  gap: 0.7rem;
+}
+
 .coluna-left-conteiner {
   display: flex;
   flex-direction: column;
   width: 10rem;
-  height: 25rem;
+  height: 27rem;
   margin-top: 1rem;
   margin-left: 8.5rem;
-  background-color: #fff;
+  background-color: var(--main-bg-color2);
   border-radius: 0.3rem;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
 
 .foto-perfil {
@@ -130,7 +143,7 @@ p {
 }
 
 .text-left {
-  padding-left: 0.8rem;
+  padding-left: 0.1rem;
 }
 
 .nome {
@@ -159,6 +172,7 @@ p {
 .menu-left {
   margin: 0.5rem;
   gap: 0.01rem;
+  border-top: 1px solid #eaeaec;
 }
 
 .icone-amigos {
@@ -166,6 +180,7 @@ p {
   padding-bottom: 0.5rem;
   color: var(--main-text1-color);
   cursor: pointer;
+  padding-top: 0.5rem;
 }
 
 .mais {
@@ -175,9 +190,123 @@ p {
   cursor: pointer;
 }
 
+.linha {
+  border-bottom: 1px solid #eaeaec;
+}
+
+.buttons-foto-perfil {
+  padding-top: 0.5rem;
+}
+
 .icone {
   display: flex;
   background-color: #eff9ff;
   border: 1px solid #dde9f8;
   cursor: pointer;
+}
+
+.coluna-quite-conteiner {
+  background-color: var(--main-bg-color2);
+  margin-top: 1rem;
+  padding-top: 0.3rem;
+  padding-left: 0.5rem;
+  border-radius: 0.3125rem 3.125rem 0.3125rem 0.3125rem;
+  width: 34rem;
+  height: 20.5rem;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.coluna-quite-conteiner h1 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  justify-items: auto;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #eaeaec;
+}
+
+.icone-column-quite {
+  display: flex;
+  gap: 2rem;
+}
+.recognition {
+  display: flex;
+  gap: 1.7rem;
+  padding-top: 0.5rem;
+}
+
+.icone-recognition {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.1rem;
+  padding-bottom: 0.2rem;
+}
+
+.recognition-text {
+  padding-left: 0.9rem;
+}
+
+.recognition-cubo {
+  padding-left: 0.4rem;
+}
+
+.recognition-coracao {
+  padding-left: 2.1rem;
+}
+
+.linha2 {
+  border-bottom: 1px solid #eaeaec;
+}
+
+.social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--main-header-color);
+  border-radius: 0.4375rem 0.4375rem 0rem 0rem;
+  width: 3rem;
+  height: 1.5rem;
+  margin-top: 0.3rem;
+}
+.social p {
+  font-weight: 700;
+  color: var(--main-bg-color2);
+}
+
+.linha3 {
+  border-bottom: 2px solid #b5b7bb;
+}
+
+.bibliography {
+  display: flex;
+}
+
+.odd {
+  display: flex;
+  background: var(--main-line-one-about-color);
+  width: 100%;
+}
+
+.even {
+  display: flex;
+  background: var(--main-line-two-about-color);
+  width: 100%;
+}
+
+.coluna-quite-conteiner-left {
+  width: 50%;
+}
+
+.coluna-quite-conteiner-right {
+  width: auto;
+}
+
+.coluna-quite-conteiner-left p {
+  display: flex;
+  justify-content: end;
+  color: #72777f;
+}
+
+.coluna-quite-conteiner-right p {
+  padding-left: 0.5rem;
+  color: #000000;
 }
