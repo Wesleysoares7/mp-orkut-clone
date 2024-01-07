@@ -62,6 +62,7 @@ p {
   display: flex;
   align-items: center;
   gap: 1rem;
+  margin-right: 7rem;
 }
 
 .header-left-img {
@@ -76,7 +77,7 @@ p {
 .menu-text {
   font-size: var(--text-sm);
   font-weight: 400;
-  color: #fff;
+  color: var(--main-bg-color2);
 }
 
 .header-conteiner p {
@@ -194,6 +195,11 @@ p {
   border-bottom: 1px solid #eaeaec;
 }
 
+.linha-depoimento {
+  border-bottom: 1px solid #eaeaec;
+  padding-top: 0.5rem;
+}
+
 .buttons-foto-perfil {
   padding-top: 0.5rem;
 }
@@ -232,6 +238,11 @@ p {
   display: flex;
   gap: 1.7rem;
   padding-top: 0.5rem;
+  cursor: pointer;
+}
+
+.recognition p {
+  color: var(--main-buttons-menu-color);
 }
 
 .icone-recognition {
@@ -239,6 +250,7 @@ p {
   align-items: center;
   gap: 0.1rem;
   padding-bottom: 0.2rem;
+  color: var(--main-buttons-menu-color);
 }
 
 .recognition-text {
@@ -309,4 +321,86 @@ p {
 .coluna-quite-conteiner-right p {
   padding-left: 0.5rem;
   color: #000000;
+}
+
+.friends {
+  background: var(--main-bg-color2);
+  margin-top: 1rem;
+  width: 16rem;
+  height: 18.5rem;
+  border-radius: 0.3125rem;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.communities {
+  background: var(--main-bg-color2);
+  margin-top: 0.5rem;
+  width: 16rem;
+  height: auto;
+  border-radius: 0.3125rem;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.text-amigos {
+  display: flex;
+  gap: 0.4rem;
+}
+
+.communities-text {
+  display: flex;
+  gap: 0.4rem;
+}
+
+.amigos {
+  margin-left: 0.5rem;
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--main-text3-color);
+}
+
+.amigos-cinco {
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--main-text1-color);
+}
+
+.friends-avatar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: var(--main-card-color);
+  width: 5rem;
+  height: 8rem;
+}
+
+.friends img {
+  display: flex;
+  padding-top: 0.5rem;
+  width: 90%;
+  height: auto;
+}
+
+.avatar-trio {
+  padding-top: 0.5rem;
+  display: flex;
+  gap: 0.3rem;
+  text-align: center;
+  margin-left: 0.2rem;
+}
+
+.avatar-two {
+  padding-top: 0.5rem;
+  display: flex;
+  gap: 0.3rem;
+  text-align: center;
+  margin-left: 0.2rem;
+}
+
+.friends-avatar p {
+  display: flex;
+}
+
+.nome-friends {
+  color: var(--main-text1-color);
+  cursor: pointer;
 }
